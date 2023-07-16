@@ -1,6 +1,75 @@
-<div class="row justify-content-center banner">
-  <div class="col-12 d-flex flex-column justify-content-center align-items-center h-100">
-    <%= image_tag 'placeholder.png', alt: "profile photo", class: 'avatar' %>
-    <h1 class="title-main">Portfolio</h1>
+<%# navbar %>
+<%# <header class="navbar-0" >
+  <h1>Xuemei Huang | Portfolio</h1>
+  <nav class="links">
+    <ul>
+      <li><a class="active" href="#work">Project</a></li>
+      <li><a href="#work">About</a></li>
+      <li><a href="#work">Contact</a></li>
+    </ul>
+  </nav>
+</header> %>
+<!-- Navigation-->
+<a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand"><a href="#page-top">Portfolio</a></li>
+    <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+    <li class="sidebar-nav-item"><a href="#about">About</a></li>
+    <li class="sidebar-nav-item"><a href="#portfolio">Projects</a></li>
+    <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- banner-->
+<div class="banner-background">
+  <div class="p-5 text-center bg-body-tertiary ">
+    <div class="container py-5">
+      <h1 class="text-body-emphasis">Meifruit</h1>
+      <img class="avatar mt-5 mb-2" src="images/mei3.JPEG" alt="dog"/>
+      <p class="col-lg-8 mx-auto lead">
+        I am a web developer
+      </p>
+    </div>
   </div>
 </div>
+<!-- projects-->
+<section class="content-section" id="portfolio">
+  <div class="container px-4 px-lg-5 pt-5">
+    <div class="content-section-heading text-center">
+      <%# <h3 class="text-secondary mb-0">Portfolio</h3> %>
+      <h2 class="mb-5">Recent Projects</h2>
+    </div>
+    <div class="row gx-0">
+      <% data.projects.each do |project| %>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2"><%= project.name %></div>
+                <p class="mb-0"><%= project.description%></p>
+              </div>
+            </div>
+            <%= image_tag project.image, alt: "project image" %>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="footer text-center">
+  <div class="container px-4 px-lg-5">
+    <ul class="list-inline mb-5">
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+      </li>
+    </ul>
+    <p class="text-muted small mb-0">Copyright &copy; meifruit 2023</p>
+  </div>
+</footer>
