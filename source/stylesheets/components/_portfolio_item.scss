@@ -28,6 +28,10 @@
   font-weight: 300;
   font-size: 1.2rem;
 }
+.img-item {
+  max-width: 100%;
+  height: auto;
+}
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
