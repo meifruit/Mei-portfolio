@@ -1,5 +1,11 @@
+// .portfolio-card {
+//   border: solid green;
+// }
+
 .portfolio-item {
-  display: block;
+  display: inline-flex;
+  justify-content: center;
+
   position: relative;
   overflow: hidden;
   max-width: 530px;
@@ -9,7 +15,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
+  background-color: rgba(33, 41, 35, 0.4);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -29,8 +35,9 @@
   font-size: 1.2rem;
 }
 .img-item {
-  max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
 }
 @media (min-width: 992px) {
   .portfolio-item {
@@ -62,9 +69,20 @@
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+  .portfolio-card:hover .portfolio-item {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+  }
+  .portfolio-card:hover .caption {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
   }
 }

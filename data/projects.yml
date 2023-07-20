@@ -2,18 +2,28 @@
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
-
+  icons:
+    - rails-plain-wordmark
+    - postgresql-plain-wordmark
 - name: Movie Watchlist
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
-
-- name: Airbnb
+  icons:
+    - rails-plain-wordmark
+    - postgresql-plain-wordmark
+- name: Hive
   description: Decent description of the app
-  image: projects/placeholder.png
+  image: projects/hive.png
   url: https://www.google.com
+  icons:
+    - rails-plain-wordmark
+    - postgresql-plain-wordmark
 
 - name: Final project
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
+  icons:
+    - rails-plain-wordmark
+    - postgresql-plain-wordmark
