@@ -1,6 +1,6 @@
 <%# navbar %>
-<%# <header class="navbar-0" >
-  <h1>Xuemei Huang | Portfolio</h1>
+<%# <header class="container navbar-0">
+  <!-- <h1>Xuemei Huang | Portfolio</h1> -->
   <nav class="links">
     <ul>
       <li><a class="active" href="#work">Project</a></li>
@@ -21,15 +21,36 @@
   </ul>
 </nav>
 <!-- banner-->
-<div class="banner-background">
+<div class="banner">
   <div class="p-5 text-center bg-body-tertiary ">
     <div class="container py-5">
       <h1 class="text-body-emphasis">Meifruit</h1>
-      <img class="avatar mt-5 mb-2" src="images/mei3.JPEG" alt="dog"/>
+      <img class="avatar mt-5 mb-2" src="images/mei2.JPEG" alt="profile"/>
       <p class="col-lg-8 mx-auto lead">
         I am a web developer
       </p>
+      <footer class="footer text-center">
+        <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
+  </div>
+</div>
+<!-- skills-->
+<div class="container skill">
+  <div class="content-section-heading text-center">
+    <h2 class="mt-5">Skills</h2>
   </div>
 </div>
 <!-- projects-->
@@ -39,17 +60,24 @@
       <%# <h3 class="text-secondary mb-0">Portfolio</h3> %>
       <h2 class="mb-5">Recent Projects</h2>
     </div>
-    <div class="row gx-0">
+    <div class="container-card row gx-0">
       <% data.projects.each do |project| %>
-        <div class="col-lg-6">
+        <div class="portfolio-card col-lg-4">
           <a class="portfolio-item" href="#!">
+            <%= image_tag project.image, alt: "project image", class: "img-item"%>
             <div class="caption">
               <div class="caption-content">
                 <div class="h2"><%= project.name %></div>
                 <p class="mb-0"><%= project.description%></p>
+                <span>
+                  <% if project.icons %>
+                    <% project.icons.each do |icon| %>
+                      <i class="devicon-<%= icon %>"></i>
+                    <% end %>
+                  <% end %>
+                </span>
               </div>
             </div>
-            <%= image_tag project.image, alt: "project image" %>
           </a>
         </div>
       <% end %>
@@ -60,7 +88,7 @@
 <footer class="footer text-center">
   <div class="container px-4 px-lg-5">
     <ul class="list-inline mb-5">
-      <li class="list-inline-item">
+      <%# <li class="list-inline-item">
         <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
       </li>
       <li class="list-inline-item">
@@ -68,8 +96,8 @@
       </li>
       <li class="list-inline-item">
         <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-      </li>
+      </li> %>
     </ul>
-    <p class="text-muted small mb-0">Copyright &copy; meifruit 2023</p>
+    <p class="text-muted small mb-0">&copy; Meifruit 2023</p>
   </div>
 </footer>

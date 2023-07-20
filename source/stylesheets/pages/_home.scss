@@ -6,15 +6,17 @@ header h1 {
   margin: 0 32px 0 0;
 }
 .links {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .links li {
   display: inline-block;
 }
 .links ul {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
+  float: right;
+  margin-right: 20px;
 }
 
 .links a {
@@ -31,6 +33,11 @@ a.active {
   padding-bottom: 1px;
 }
 
+// skills
+
+.skill {
+  background-color: azure;
+}
 // footer
 
 footer.footer {
@@ -51,4 +58,15 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
   background-color: #155d74;
   text-decoration: none;
+}
+
+// projects
+.col-lg-4 {
+  padding: 10px; /* Adjust the padding value as needed */
+}
+
+// icon
+.caption span {
+  color: #cccccc;
+  font-size: 22px;
 }
