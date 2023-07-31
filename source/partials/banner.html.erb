@@ -23,13 +23,13 @@
 <!-- banner-->
 <div class="banner">
   <div class="p-5 text-center bg-body-tertiary ">
-    <div class="container py-5">
+    <div class="container py-0">
       <h1 class="text-body-emphasis">Meifruit</h1>
-      <img class="avatar mt-5 mb-2" src="images/mei2.JPEG" alt="profile"/>
+      <img class="avatar mt-5 mb-2" src="images/mei5.JPG" alt="profile"/>
       <p class="col-lg-8 mx-auto lead">
-        I am a web developer
+        <%# I am a web developer %>
       </p>
-      <footer class="footer text-center">
+      <%# <footer class="footer text-center">
         <div class="container px-4 px-lg-5">
           <ul class="list-inline mb-5">
             <li class="list-inline-item">
@@ -43,14 +43,43 @@
             </li>
           </ul>
         </div>
-      </footer>
+      </footer> %>
+      <div class="navigation-buttons d-flex justify-content-center my-5 gap-5">
+        <a href="#about" class="navigation-button-link">
+          <div class="navigation-button d-flex flex-column justify-content-center align-items-center">
+            <%# <i class="fa-regular fa-address-card fa-2xl"></i> %>
+            <i class="fa-regular fa-face-smile fa-lg"></i>
+            <span style="margin-top: 1rem;">About</span>
+          </div>
+        </a>
+        <a href="#projects" class="navigation-button-link">
+          <div class="navigation-button d-flex flex-column justify-content-center align-items-center">
+            <%# <i class="fa-solid fa-keyboard fa-2xl color"></i> %>
+            <i class="fa-solid fa-unlock fa-lg"></i>
+            <span style="margin-top: 1rem;">Projects</span>
+          </div>
+        </a>
+        <a href="#resumes" class="navigation-button-link">
+          <div class="navigation-button d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-regular fa-file fa-lg"></i>
+            <span style="margin-top: 1rem;">Resume</span>
+          </div>
+        </a>
+        <a href="#contact" class="navigation-button-link">
+          <div class="navigation-button d-flex flex-column justify-content-center align-items-center">
+            <%# <i class="fa-sharp fa-solid fa-paper-plane fa-2xl"></i> %>
+            <i class="fa-duotone fa-solid fa-paper-plane fa-lg"></i>
+            <span style="margin-top: 1rem;">Contact</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
 <!-- skills-->
 <div class="container skill">
   <div class="content-section-heading text-center">
-    <h2 class="mt-5">Skills</h2>
+    <h2 class="mt-5">About me</h2>
   </div>
 </div>
 <!-- projects-->
@@ -88,7 +117,7 @@
 <footer class="footer text-center">
   <div class="container px-4 px-lg-5">
     <ul class="list-inline mb-5">
-      <%# <li class="list-inline-item">
+      <li class="list-inline-item">
         <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
       </li>
       <li class="list-inline-item">
@@ -96,7 +125,7 @@
       </li>
       <li class="list-inline-item">
         <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-      </li> %>
+      </li>
     </ul>
     <p class="text-muted small mb-0">&copy; Meifruit 2023</p>
   </div>
