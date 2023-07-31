@@ -21,7 +21,7 @@
   </ul>
 </nav>
 <!-- banner-->
-<div class="banner">
+<div class="banner col-lg-12 col-md-12 col-sm-12">
   <div class="p-5 text-center bg-body-tertiary ">
     <div class="container py-0">
       <h1 class="text-body-emphasis">Meifruit</h1>
@@ -29,21 +29,6 @@
       <p class="col-lg-8 mx-auto lead">
         <%# I am a web developer %>
       </p>
-      <%# <footer class="footer text-center">
-        <div class="container px-4 px-lg-5">
-          <ul class="list-inline mb-5">
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-            </li>
-          </ul>
-        </div>
-      </footer> %>
       <div class="navigation-buttons d-flex justify-content-center my-5 gap-5">
         <a href="#about" class="navigation-button-link">
           <div class="navigation-button d-flex flex-column justify-content-center align-items-center">
@@ -89,11 +74,10 @@
       <%# <h3 class="text-secondary mb-0">Portfolio</h3> %>
       <h2 class="mb-5">Recent Projects</h2>
     </div>
-    <div class="container-card row gx-0">
+    <div class="row gx-0">
       <% data.projects.each do |project| %>
-        <div class="portfolio-card col-lg-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <a class="portfolio-item" href="#!">
-            <%= image_tag project.image, alt: "project image", class: "img-item"%>
             <div class="caption">
               <div class="caption-content">
                 <div class="h2"><%= project.name %></div>
@@ -107,6 +91,7 @@
                 </span>
               </div>
             </div>
+            <%= image_tag project.image, alt: "project image", class: "img-item"%>
           </a>
         </div>
       <% end %>
