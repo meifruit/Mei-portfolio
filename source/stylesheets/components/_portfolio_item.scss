@@ -1,16 +1,52 @@
-// .portfolio-card {
-//   border: solid green;
-// }
+// /* Add these styles to create a grid layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+/* Adjust the width of the portfolio item for different screen sizes */
 .portfolio-item {
   display: inline-flex;
   justify-content: center;
-
   position: relative;
   overflow: hidden;
+  width: 100%; /* Use 100% width for all screen sizes */
   max-width: 530px;
   margin: auto auto 1rem;
 }
+
+/* Set the width of the portfolio item to 50% for iPad size (768px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    max-width: 50%;
+  }
+}
+
+/* Set the width of the portfolio item to 33.33% for larger devices (992px and above) */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    max-width: 33.33%;
+  }
+}
+
+/* Adjust styles for smaller screens (e.g., mobile phones) */
+@media (max-width: 767px) {
+  .img-item {
+    height: 200px; /* Adjust the height for smaller screens if needed */
+  }
+
+  .navigation-buttons {
+    flex-direction: column; /* Stack the navigation buttons vertically */
+    gap: 1rem; /* Add some space between the buttons */
+  }
+
+  .navigation-button i {
+    font-size: 1.5rem; /* You can adjust the size as needed */
+  }
+  /* Adjust other styles as needed for smaller screens */
+}
+
 .portfolio-item .caption {
   display: flex;
   height: 100%;
@@ -21,29 +57,35 @@
   bottom: 0;
   z-index: 1;
 }
+
 .portfolio-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
 }
+
 .portfolio-item .caption .caption-content h2,
 .portfolio-item .caption .caption-content .h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
+
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
 }
+
 .img-item {
-  width: 400px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
 }
+
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
   }
+
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, background-color 0.7s;
@@ -52,12 +94,14 @@
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
+
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
   }
+
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out;
@@ -65,19 +109,23 @@
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
+
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+
   .portfolio-card:hover .portfolio-item {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+
   .portfolio-card:hover .caption {
     position: absolute;
     top: 0;

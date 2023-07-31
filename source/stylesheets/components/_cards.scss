@@ -1,9 +1,9 @@
 .card-trip {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   gap: 2rem;
 }
 
@@ -17,7 +17,7 @@
 }
 .card-product img {
   height: 100%;
-  width: 200px;
+  width: 300px;
   object-fit: cover;
 }
 // .card-trip > img {
@@ -52,6 +52,7 @@
   top: -20px;
   width: 40px;
 }
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
@@ -85,14 +86,14 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
