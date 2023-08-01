@@ -3,27 +3,41 @@
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
-    - rails-plain-wordmark
+    - rails-plain
     - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
 - name: Movie Watchlist
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
-    - rails-plain-wordmark
+    - rails-plain
     - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
 - name: Hive
   description: Decent description of the app
   image: projects/hive.png
   url: https://www.google.com
   icons:
-    - rails-plain-wordmark
+    - rails-plain
     - postgresql-plain-wordmark
-
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
+    - css3-plain-wordmark
+    - html5-plain-wordmark
+    - github-original
 - name: Final project
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
-    - rails-plain-wordmark
+    - rails-plain
     - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
