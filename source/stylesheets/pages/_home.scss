@@ -74,12 +74,12 @@ footer.footer .social-link:hover {
 // about me
 .cta {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  // padding-bottom: 5rem;
   // background-color: rgba(230, 167, 86, 0.9);
 }
 .cta .cta-inner {
   position: relative;
-  padding: 3rem;
+  padding: 1rem;
   margin: 0.5rem;
 }
 .cta .cta-inner:before {
@@ -115,4 +115,10 @@ footer.footer .social-link:hover {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+// stack icon
+.tech-card img {
+  width: 50px;
+  height: auto;
 }
