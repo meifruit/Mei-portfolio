@@ -116,19 +116,29 @@
             <div class="caption">
               <div class="caption-content <%= 'has-link' if project.url %>">
                 <div class="h2"><%= project.name %></div>
+                <div><%= project.role %></div>
                 <p class="mb-0"><%= project.description %></p>
                 <span>
                   <% if project.icons %>
                     <% project.icons.each do |icon| %>
-                      <i class="devicon-<%= icon %>"></i>
+                      <% unless icon == "github-original" %>
+                        <i class="devicon-<%= icon %>"></i>
+                      <% end %>
                     <% end %>
                   <% end %>
                 </span>
-                <% if project.url %>
-                  <a href="<%= project.url %>" class="external-link" target="_blank">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                <% end %>
+                <div class="d-flex">
+                  <% if project.url %>
+                    <a href="<%= project.url %>" class="external-link" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  <% end %>
+                  <% if project.icons.include?("github-original") %>
+                    <a href="<%= project.github_url %>" class="external-link" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  <% end %>
+                </div>
               </div>
             </div>
             <%= image_tag project.image, alt: "project image", class: "img-item" %>
