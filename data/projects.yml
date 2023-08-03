@@ -41,3 +41,17 @@
     - heroku-original
     - ruby-plain-wordmark
     - javascript-plain
+- name: Capitalista
+  description: Decent description of the app
+  image: projects/capitalista.png
+  url: https://meifruit.github.io/portfolio-challenges/Capitalista/index.html
+  icons:
+    - html5-plain-wordmark
+    - javascript-plain
+- name: TinPanda
+  description: Decent description of the app
+  image: projects/tinpanda.png
+  url: https://meifruit.github.io/portfolio-challenges/TinPanda/index.html
+  icons:
+    - html5-plain-wordmark
+    - bootstrap-plain-wordmark

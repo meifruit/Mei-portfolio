@@ -29,7 +29,7 @@
       <p class="col-lg-8 mx-auto lead">
         <%# I am a web developer %>
       </p>
-      <div class="navigation-buttons d-flex justify-content-center my-5 gap-5">
+      <div class="navigation-buttons d-flex justify-content-center mt-5 mb-2 gap-5">
         <a href="#about" class="navigation-button-link">
           <div class="navigation-button d-flex flex-column justify-content-center align-items-center">
             <%# <i class="fa-regular fa-address-card fa-2xl"></i> %>
@@ -112,11 +112,11 @@
     <div class="row gx-0">
       <% data.projects.each do |project| %>
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <a class="portfolio-item" href="#!">
+          <div class="portfolio-item">
             <div class="caption">
-              <div class="caption-content">
+              <div class="caption-content <%= 'has-link' if project.url %>">
                 <div class="h2"><%= project.name %></div>
-                <p class="mb-0"><%= project.description%></p>
+                <p class="mb-0"><%= project.description %></p>
                 <span>
                   <% if project.icons %>
                     <% project.icons.each do |icon| %>
@@ -124,10 +124,15 @@
                     <% end %>
                   <% end %>
                 </span>
+                <% if project.url %>
+                  <a href="<%= project.url %>" class="external-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                <% end %>
               </div>
             </div>
-            <%= image_tag project.image, alt: "project image", class: "img-item"%>
-          </a>
+            <%= image_tag project.image, alt: "project image", class: "img-item" %>
+          </div>
         </div>
       <% end %>
     </div>
