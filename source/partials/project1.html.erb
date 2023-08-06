@@ -1,0 +1,46 @@
+<!-- projects-->
+<section class="content-section" id="portfolio">
+  <div class="container px-4 px-lg-5 pt-5">
+    <div class="content-section-heading text-center">
+      <%# <h3 class="text-secondary mb-0">Portfolio</h3> %>
+      <h2 class="mb-5">Recent Projects</h2>
+    </div>
+    <div class="row gx-0">
+      <% data.projects.each do |project| %>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="portfolio-item">
+            <div class="caption">
+              <div class="caption-content <%= 'has-link' if project.url %>">
+                <div class="h2"><%= project.name %></div>
+                <div><%= project.role %></div>
+                <p class="mb-0"><%= project.description %></p>
+                <span>
+                  <% if project.icons %>
+                    <% project.icons.each do |icon| %>
+                      <% unless icon == "github-original" %>
+                        <i class="devicon-<%= icon %>"></i>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+                </span>
+                <div class="d-flex">
+                  <% if project.url %>
+                    <a href="<%= project.url %>" class="external-link" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  <% end %>
+                  <% if project.icons.include?("github-original") %>
+                    <a href="<%= project.github_url %>" class="external-link" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+            <%= image_tag project.image, alt: "project image", class: "img-item" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
