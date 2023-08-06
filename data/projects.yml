@@ -19,6 +19,7 @@
     - ruby-plain-wordmark
     - javascript-plain
 - name: Hive
+  role: Front-end developer
   description: Decent description of the app
   image: projects/hive.png
   url: https://www.google.com
@@ -31,7 +32,8 @@
     - css3-plain-wordmark
     - html5-plain-wordmark
     - github-original
-- name: Final project
+- name: Wolfminute
+  role: Back-end developer
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
@@ -41,3 +43,17 @@
     - heroku-original
     - ruby-plain-wordmark
     - javascript-plain
+- name: Capitalista
+  description: Decent description of the app
+  image: projects/capitalista.png
+  url: https://meifruit.github.io/portfolio-challenges/Capitalista/index.html
+  icons:
+    - html5-plain-wordmark
+    - javascript-plain
+- name: TinPanda
+  description: Decent description of the app
+  image: projects/tinpanda.png
+  url: https://meifruit.github.io/portfolio-challenges/TinPanda/index.html
+  icons:
+    - html5-plain-wordmark
+    - bootstrap-plain-wordmark
