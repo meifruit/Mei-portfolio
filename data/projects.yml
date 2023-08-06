@@ -1,3 +1,30 @@
+- name: Wolfminute
+  role: Back-end developer
+  description: Decent description of the app
+  image: projects/placeholder.png
+  url: https://www.google.com
+  icons:
+    - rails-plain
+    - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
+
+- name: Hive
+  role: Front-end developer
+  description: Decent description of the app
+  image: projects/hive.png
+  url: https://www.google.com
+  icons:
+    - rails-plain
+    - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
+    - css3-plain-wordmark
+    - html5-plain-wordmark
+    - github-original
+
 - name: Longest Word Game
   description: Decent description of the app
   image: projects/placeholder.png
@@ -18,35 +45,11 @@
     - heroku-original
     - ruby-plain-wordmark
     - javascript-plain
-- name: Hive
-  role: Front-end developer
-  description: Decent description of the app
-  image: projects/hive.png
-  url: https://www.google.com
-  icons:
-    - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
-    - javascript-plain
-    - css3-plain-wordmark
-    - html5-plain-wordmark
-    - github-original
-- name: Wolfminute
-  role: Back-end developer
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  icons:
-    - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
-    - javascript-plain
+
 - name: Capitalista
   description: Decent description of the app
   image: projects/capitalista.png
-  url: https://meifruit.github.io/portfolio-challenges/Capitalista/index.html
+  url: https://meifruit.github.io/portfolio-challenges/Capitalista/starter/index.html
   icons:
     - html5-plain-wordmark
     - javascript-plain
