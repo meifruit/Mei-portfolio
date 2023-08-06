@@ -1,27 +1,5 @@
-<%# navbar %>
-<%# <header class="container navbar-0">
-  <!-- <h1>Xuemei Huang | Portfolio</h1> -->
-  <nav class="links">
-    <ul>
-      <li><a class="active" href="#work">Project</a></li>
-      <li><a href="#work">About</a></li>
-      <li><a href="#work">Contact</a></li>
-    </ul>
-  </nav>
-</header> %>
-<!-- Navigation-->
-<a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-<nav id="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <li class="sidebar-brand"><a href="#page-top">Portfolio</a></li>
-    <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-    <li class="sidebar-nav-item"><a href="#about">About</a></li>
-    <li class="sidebar-nav-item"><a href="#portfolio">Projects</a></li>
-    <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
 <!-- banner-->
-<div class="banner ">
+<div class="banner" id="home">
   <div class="p-5 text-center bg-body-tertiary ">
     <div class="container py-0">
       <img class="avatar mt-5 mb-2" src="images/mei8.JPG" alt="profile"/>
@@ -67,7 +45,7 @@
     <h2 class="mt-5">About me</h2>
   </div>
 </div> %>
-<section class="page-section cta">
+<section class="page-section cta" id="about">
   <div class="container">
     <div class="row">
       <div class="col-xl-9 mx-auto">
@@ -102,66 +80,3 @@
     </div>
   </div>
 </section>
-<!-- projects-->
-<section class="content-section" id="portfolio">
-  <div class="container px-4 px-lg-5 pt-5">
-    <div class="content-section-heading text-center">
-      <%# <h3 class="text-secondary mb-0">Portfolio</h3> %>
-      <h2 class="mb-5">Recent Projects</h2>
-    </div>
-    <div class="row gx-0">
-      <% data.projects.each do |project| %>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="portfolio-item">
-            <div class="caption">
-              <div class="caption-content <%= 'has-link' if project.url %>">
-                <div class="h2"><%= project.name %></div>
-                <div><%= project.role %></div>
-                <p class="mb-0"><%= project.description %></p>
-                <span>
-                  <% if project.icons %>
-                    <% project.icons.each do |icon| %>
-                      <% unless icon == "github-original" %>
-                        <i class="devicon-<%= icon %>"></i>
-                      <% end %>
-                    <% end %>
-                  <% end %>
-                </span>
-                <div class="d-flex">
-                  <% if project.url %>
-                    <a href="<%= project.url %>" class="external-link" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  <% end %>
-                  <% if project.icons.include?("github-original") %>
-                    <a href="<%= project.github_url %>" class="external-link" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  <% end %>
-                </div>
-              </div>
-            </div>
-            <%= image_tag project.image, alt: "project image", class: "img-item" %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</section>
-<!-- Footer-->
-<footer class="footer text-center">
-  <div class="container px-4 px-lg-5">
-    <ul class="list-inline mb-5">
-      <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white mr-3" href="https://github.com/meifruit" target="_blank"><i class="devicon-github-original"></i></a>
-      </li>
-      <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/xuemei-huang" target="_blank"><i class="devicon-linkedin-plain"></i></a>
-      </li>
-      <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white" href="mailto:meifruit.95@gmail.com"><i class="fa-regular fa-envelope "></i></a>
-      </li>
-    </ul>
-    <p class="text-muted small mb-0">&copy; Meifruit 2023</p>
-  </div>
-</footer>

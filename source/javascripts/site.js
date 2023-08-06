@@ -56,3 +56,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
   //   }
   // });
 });
+
+// add navigation
+document
+  .querySelector(".navigation-buttons")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Matching strategy
+    if (e.target.classList.contains("navigation-button-link")) {
+      const id = e.target.getAttribute("href");
+      console.log(id);
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
