@@ -1,5 +1,5 @@
 - name: Longest Word Game
-  description: Decent description of the app
+  description: Decent description of the appDecent description of the appDecent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
@@ -8,8 +8,9 @@
     - heroku-original
     - ruby-plain-wordmark
     - javascript-plain
+    - github-original
 - name: Movie Watchlist
-  description: Decent description of the app
+  description: Decent description of the appDecent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
@@ -18,9 +19,10 @@
     - heroku-original
     - ruby-plain-wordmark
     - javascript-plain
+    - github-original
 - name: Hive
-  role: Front-end developer
-  description: Decent description of the app
+
+  description: Decent description of the appDecent description of the app
   image: projects/hive.png
   url: https://www.google.com
   icons:
@@ -33,8 +35,8 @@
     - html5-plain-wordmark
     - github-original
 - name: Wolfminute
-  role: Back-end developer
-  description: Decent description of the app
+
+  description: Decent description of the appDecent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
@@ -43,17 +45,20 @@
     - heroku-original
     - ruby-plain-wordmark
     - javascript-plain
+    - github-original
 - name: Capitalista
-  description: Decent description of the app
+  description: Decent description of the appDecent description of the app
   image: projects/capitalista.png
   url: https://meifruit.github.io/portfolio-challenges/Capitalista/index.html
   icons:
     - html5-plain-wordmark
     - javascript-plain
+    - github-original
 - name: TinPanda
-  description: Decent description of the app
+  description: Decent description of the appDecent description of the app
   image: projects/tinpanda.png
   url: https://meifruit.github.io/portfolio-challenges/TinPanda/index.html
   icons:
     - html5-plain-wordmark
     - bootstrap-plain-wordmark
+    - github-original
