@@ -2,7 +2,8 @@
 //   height: 100vh;
 // }
 .banner {
-  background-color: #176b87;
+  // background-color: #176b87;
+  background-color: #63888c;
   min-height: 30rem;
   position: relative;
   display: table;
@@ -21,6 +22,10 @@
   background-size: cover;
 }
 .navigation-button-link {
-  color: #95c8d3;
+  color: #a5e0f3;
   text-decoration: none;
+}
+.text-body-emphasis {
+  text-shadow: 0 0 7px #8fcdd1, 0 0 10px #8fcdd1, 0 0 42px #8fcdd1,
+    0 0 82px #8fcdd1;
 }
