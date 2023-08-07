@@ -12,10 +12,23 @@
   position: relative;
   overflow: hidden;
   width: 100%; /* Use 100% width for all screen sizes */
+  height: 420px;
   max-width: 530px;
   margin: auto auto 1rem;
 }
+.external-links-container {
+  display: flex;
+}
 
+.external-link + .external-link {
+  margin-left: 7px; /* Adjust the value to provide spacing between the icons */
+}
+
+.external-link {
+  margin-right: 5px; /* Adjust the value to provide spacing between the icons */
+  font-size: 20px;
+  color: #a5e0f3;
+}
 /* Set the width of the portfolio item to 50% for iPad size (768px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6 {

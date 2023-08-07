@@ -7,33 +7,35 @@
     </div>
     <div class="row gx-0">
       <% data.projects.each do |project| %>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="portfolio-item">
             <div class="caption">
               <div class="caption-content <%= 'has-link' if project.url %>">
                 <div class="h2"><%= project.name %></div>
                 <div><%= project.role %></div>
                 <p class="mb-0"><%= project.description %></p>
-                <span>
-                  <% if project.icons %>
-                    <% project.icons.each do |icon| %>
-                      <% unless icon == "github-original" %>
-                        <i class="devicon-<%= icon %>"></i>
+                <div class="d-flex justify-content-between  mt-1">
+                  <span>
+                    <% if project.icons %>
+                      <% project.icons.each do |icon| %>
+                        <% unless icon == "github-original" %>
+                          <i class="devicon-<%= icon %>"></i>
+                        <% end %>
                       <% end %>
                     <% end %>
-                  <% end %>
-                </span>
-                <div class="d-flex">
-                  <% if project.url %>
-                    <a href="<%= project.url %>" class="external-link" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  <% end %>
-                  <% if project.icons.include?("github-original") %>
-                    <a href="<%= project.github_url %>" class="external-link" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  <% end %>
+                  </span>
+                  <div class="external-links-container">
+                    <% if project.icons.include?("github-original") %>
+                      <a href="<%= project.github_url %>" class="external-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    <% end %>
+                    <% if project.url %>
+                      <a href="<%= project.url %>" class="external-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    <% end %>
+                  </div>
                 </div>
               </div>
             </div>
