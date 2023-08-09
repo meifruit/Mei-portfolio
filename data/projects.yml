@@ -26,7 +26,7 @@
 - name: Capitalista
   description: Decent description of the appDecent description of the app
   image: projects/capitalista.png
-  url: https://meifruit.github.io/portfolio-challenges/Capitalista/index.html
+  url: https://meifruit.github.io/portfolio-challenges/Capitalista/starter/index.html
   icons:
     - html5-plain-wordmark
     - javascript-plain
