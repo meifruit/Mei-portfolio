@@ -64,7 +64,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 41, 35, 0.4);
+  background-color: rgba(150, 196, 228, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -78,13 +78,13 @@
 
 .portfolio-item .caption .caption-content h2,
 .portfolio-item .caption .caption-content .h2 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .img-item {

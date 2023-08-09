@@ -51,7 +51,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.6rem;
-  background-color: #63888c;
+  background-color: $light-gray;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +67,8 @@ footer.footer .social-link:hover {
 
 // icon
 .caption span {
-  color: #cccccc;
+  // color: #cccccc;
+  color: #c5c2c2;
   font-size: 22px;
 }
 
@@ -91,7 +92,7 @@ footer.footer .social-link:hover {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
   z-index: -1;
 }
 

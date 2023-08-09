@@ -58,18 +58,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 // add navigation
-// const navigationButtonsElement = document.querySelector(".navigation-buttons");
-// console.log(navigationButtonsElement);
-// navigationButtonsElement.addEventListener("click", function (e) {
-//   e.preventDefault();
+// Correct Scope
+document.addEventListener("DOMContentLoaded", function () {
+  const navigationButtonsElement = document.querySelector(
+    ".navigation-buttons"
+  );
 
-//   // Matching strategy
-//   if (e.target.classList.contains("navigation-button")) {
-//     const id = e.target.getAttribute("href");
-//     console.log(id);
-//     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-//   }
-// });
+  navigationButtonsElement.addEventListener("click", function (e) {
+    // Now navigationButtonsElement is accessible within this function's scope
+    e.preventDefault();
+
+    if (e.target.classList.contains("navigation-button-link")) {
+      const id = e.target.getAttribute("href");
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
 
 // about me
 // const tabs = document.querySelectorAll(".operations__tab");
