@@ -1,27 +1,4 @@
-- name: Longest Word Game
-  description: Decent description of the appDecent description of the appDecent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  icons:
-    - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
-    - javascript-plain
-    - github-original
-- name: Movie Watchlist
-  description: Decent description of the appDecent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  icons:
-    - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
-    - javascript-plain
-    - github-original
 - name: Hive
-
   description: Decent description of the appDecent description of the app
   image: projects/hive.png
   url: https://www.google.com
@@ -37,7 +14,7 @@
 - name: Wolfminute
 
   description: Decent description of the appDecent description of the app
-  image: projects/placeholder.png
+  image: projects/wolfminute.png
   url: https://www.google.com
   icons:
     - rails-plain
@@ -61,4 +38,26 @@
   icons:
     - html5-plain-wordmark
     - bootstrap-plain-wordmark
+    - github-original
+- name: Longest Word Game
+  description: Decent description of the appDecent description of the appDecent description of the app
+  image: projects/placeholder.png
+  url: https://www.google.com
+  icons:
+    - rails-plain
+    - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
+    - github-original
+- name: Movie Watchlist
+  description: Decent description of the appDecent description of the app
+  image: projects/placeholder.png
+  url: https://www.google.com
+  icons:
+    - rails-plain
+    - postgresql-plain-wordmark
+    - heroku-original
+    - ruby-plain-wordmark
+    - javascript-plain
     - github-original
