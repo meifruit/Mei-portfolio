@@ -29,8 +29,10 @@
   url: https://meifruit.github.io/portfolio-challenges/Capitalista/starter/index.html
   icons:
     - html5-plain-wordmark
+    - css3-plain-wordmark
     - javascript-plain
     - github-original
+
 - name: TinPanda
   description: Decent description of the appDecent description of the app
   image: projects/tinpanda.png

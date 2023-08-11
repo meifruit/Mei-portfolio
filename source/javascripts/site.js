@@ -57,47 +57,41 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // });
 });
 
-// add navigation
-// Correct Scope
-document.addEventListener("DOMContentLoaded", function () {
-  const navigationButtonsElement = document.querySelector(
-    ".navigation-buttons"
-  );
+// navigation
+// 1. add event listener to common parent element
+// 2. Determine what element originated the event
+window.addEventListener("DOMContentLoaded", (event) => {
+  document
+    .querySelector(".navigation-buttons")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log(e.target);
 
-  navigationButtonsElement.addEventListener("click", function (e) {
-    // Now navigationButtonsElement is accessible within this function's scope
-    e.preventDefault();
+      const anchorElement = e.target.closest("a");
 
-    if (e.target.classList.contains("navigation-button-link")) {
-      const id = e.target.getAttribute("href");
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    }
-  });
+      if (
+        anchorElement &&
+        anchorElement.classList.contains("navigation-button-link")
+      ) {
+        const id = anchorElement.getAttribute("href");
+        document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+      }
+    });
 });
-
-// about me
-// const tabs = document.querySelectorAll(".operations__tab");
-// const tabsContainer = document.querySelector(".operations__tab-container");
-// const tabsContent = document.querySelectorAll(".operations__content");
-// tabsContainer.addEventListener("click", function (e) {
-//   const clicked = e.target.closest(".operations__tab");
-//   console.log(clicked);
-
-//   // guard clause
-//   if (!clicked) return;
-
-//   // remove active classes
-//   tabs.forEach((t) => t.classList.remove("operations__tab--active"));
-//   tabsContent.forEach((c) => c.classList.remove("operations__content--active"));
-//   // active tab
-//   clicked.classList.add("operations__tab--active");
-
-//   // active content area
-//   console.log(clicked.dataset.tab);
-//   document
-//     .querySelector(`.operations__content--${clicked.dataset.tab}`)
-//     .classList.add("operations__content--active");
+// window.addEventListener("DOMContentLoaded", (event) => {
+//   document.querySelectorAll(".navigation-button-link").forEach(function (el) {
+//     el.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       // console.log("LINK");
+//       const id = this.getAttribute("href");
+//       console.log(id);
+//       document.querySelector(id).scrollIntoView({
+//         behavior: "smooth",
+//       });
+//     });
+//   });
 // });
+// description-tab
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".operations__tab");
   const tabsContainer = document.querySelector(".operations__tab-container");
