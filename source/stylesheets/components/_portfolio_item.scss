@@ -50,7 +50,7 @@
   }
 
   .navigation-buttons {
-    flex-direction: column; /* Stack the navigation buttons vertically */
+    flex-direction: row; /* Stack the navigation buttons vertically */
     gap: 1rem; /* Add some space between the buttons */
   }
 
