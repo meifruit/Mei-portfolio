@@ -29,3 +29,77 @@
   text-shadow: 0 0 7px #8fcdd1, 0 0 10px #8fcdd1, 0 0 42px #8fcdd1,
     0 0 82px #8fcdd1;
 }
+/* Adjust styles for tablet screens (min-width: 768px) */
+@media (min-width: 768px) {
+  // .banner {
+  //   min-height: 30rem; /* Adjust the height for larger screens (tablets) */
+  // }
+  // h2.text-body-emphasis {
+  //   font-size: 2rem; /* Adjust the font size for tablets */
+  // }
+
+  // .navigation-button {
+  //   font-size: 1.2rem; /* Adjust the font size for tablets */
+  // }
+}
+
+/* Adjust styles for iPad screens (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    min-height: 30rem; /* Adjust the height for iPads */
+  }
+  .avatar {
+    width: 20vh; /* Adjust the width for iPads */
+  }
+  h2.text-body-emphasis {
+    font-size: 1.8rem; /* Adjust the font size for iPads */
+  }
+
+  .navigation-button {
+    font-size: 1rem; /* Adjust the font size for iPads */
+  }
+}
+
+/* Adjust styles for larger screens (min-width: 992px) */
+@media (min-width: 992px) {
+  // .banner {
+  //   min-height: 40rem; /* Adjust the height for even larger screens (laptops/desktops) */
+  // }
+  // .avatar {
+  //   width: 15vh; /* Adjust the width for even larger screens (laptops/desktops) */
+  // }
+  // h2.text-body-emphasis {
+  //   font-size: 2.5rem; /* Adjust the font size for larger screens */
+  // }
+
+  // .navigation-button {
+  //   font-size: 1.5rem; /* Adjust the font size for larger screens */
+  // }
+}
+
+/* Adjust styles for mobile phones (max-width: 767px) */
+@media (max-width: 540px) {
+  .banner {
+    min-height: 20rem;
+  }
+  .avatar {
+    width: 20vh;
+  }
+
+  h2.text-body-emphasis {
+    font-size: 1.5rem;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    // gap: 1rem;
+  }
+
+  // .navigation-button {
+  //   font-size: 1rem;
+  //   text-align: center;
+  // }
+}
