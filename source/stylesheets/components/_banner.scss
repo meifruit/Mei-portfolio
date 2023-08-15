@@ -78,7 +78,7 @@
 }
 
 /* Adjust styles for mobile phones (max-width: 767px) */
-@media (max-width: 540px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .banner {
     min-height: 20rem;
   }
@@ -91,15 +91,21 @@
   }
 
   .navigation-buttons {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    // gap: 1rem;
+    gap: 1rem; /* Add spacing between buttons */
   }
 
-  // .navigation-button {
-  //   font-size: 1rem;
-  //   text-align: center;
-  // }
+  .navigation-button {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+
+  /* Adjust width for responsiveness */
+  .cta .cta-inner {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
 }
