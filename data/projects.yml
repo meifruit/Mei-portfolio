@@ -1,4 +1,16 @@
-- name: Hive
+- name: Wolfminute #1
+  description: Decent description of the appDecent description of the app
+  image: projects/wolfminute.png
+  url: https://wolfminute.onrender.com/users/sign_in
+  github_url: https://github.com/meifruit/WolfMinute-portfolio
+  icons:
+    - rails-plain
+    - ruby-plain-wordmark
+    - javascript-plain
+    - postgresql-plain-wordmark
+    # - heroku-original
+    - github-original
+- name: Hive #2
   description: Decent description of the appDecent description of the app
   image: projects/hive.png
   url: https://www.google.com
@@ -11,40 +23,21 @@
     - css3-plain-wordmark
     - html5-plain-wordmark
     - github-original
-- name: Wolfminute
-
-  description: Decent description of the appDecent description of the app
-  image: projects/wolfminute.png
-  url: https://www.google.com
-  icons:
-    - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
-    - javascript-plain
-    - github-original
-- name: Capitalista
-  description: Decent description of the appDecent description of the app
+- name: Capitalista #3
+  description: A minimalist bank APP that displays all transactions, allows money transfers, and enables to request a loan. Login with(User:mf, PIN:5555).
   image: projects/capitalista.png
   url: https://meifruit.github.io/portfolio-challenges/Capitalista/starter/index.html
+  github_url: https://github.com/meifruit/portfolio-challenges
   icons:
     - html5-plain-wordmark
     - css3-plain-wordmark
     - javascript-plain
     - github-original
-
-- name: TinPanda
-  description: Decent description of the appDecent description of the app
-  image: projects/tinpanda.png
-  url: https://meifruit.github.io/portfolio-challenges/TinPanda/index.html
-  icons:
-    - html5-plain-wordmark
-    - bootstrap-plain-wordmark
-    - github-original
-- name: Longest Word Game
-  description: Decent description of the appDecent description of the appDecent description of the app
+- name: Movie Watchlist #4
+  description: A watch list website where you can make lists and add movies you want to watch.
   image: projects/placeholder.png
-  url: https://www.google.com
+  url: https://watch-list-40nu.onrender.com/lists
+  github_url: https://github.com/meifruit/rails-watch-list
   icons:
     - rails-plain
     - postgresql-plain-wordmark
@@ -52,8 +45,16 @@
     - ruby-plain-wordmark
     - javascript-plain
     - github-original
-- name: Movie Watchlist
-  description: Decent description of the appDecent description of the app
+# - name: TinPanda #5
+#   description: Decent description of the appDecent description of the app
+#   image: projects/tinpanda.png
+#   url: https://meifruit.github.io/portfolio-challenges/TinPanda/index.html
+#   icons:
+#     - html5-plain-wordmark
+#     - bootstrap-plain-wordmark
+#     - github-original
+- name: Longest Word Game
+  description: Decent description of the appDecent description of the appDecent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   icons:
