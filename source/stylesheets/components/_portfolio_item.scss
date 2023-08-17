@@ -4,6 +4,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.skill-icon {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 4rem;
+}
+
+.skill-icon > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 2rem;
+}
 
 /* Adjust the width of the portfolio item for different screen sizes */
 .portfolio-item {
@@ -49,14 +61,15 @@
     height: 200px; /* Adjust the height for smaller screens if needed */
   }
 
-  .navigation-buttons {
-    flex-direction: row; /* Stack the navigation buttons vertically */
-    gap: 1rem; /* Add some space between the buttons */
-  }
+  // .navigation-buttons {
+  //   flex-direction: row; /* Stack the navigation buttons vertically */
+  //   gap: 1rem; /* Add some space between the buttons */
+  // }
 
-  .navigation-button i {
-    font-size: 1.5rem; /* You can adjust the size as needed */
-  }
+  // .navigation-button i {
+  //   font-size: 1.5rem; /* You can adjust the size as needed */
+  // }
+
   /* Adjust other styles as needed for smaller screens */
 }
 
