@@ -4,6 +4,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.skill-icon {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 4rem;
+}
+
+.skill-icon > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 2rem;
+}
 
 /* Adjust the width of the portfolio item for different screen sizes */
 .portfolio-item {
