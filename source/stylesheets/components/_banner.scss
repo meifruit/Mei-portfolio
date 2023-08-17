@@ -85,6 +85,10 @@
   .navigation-button {
     font-size: 1rem; /* Adjust the font size for iPads */
   }
+  .btn {
+    padding: 0; /* Remove padding for iPhones */
+    font-size: 0.8rem;
+  }
 }
 
 /* Adjust styles for larger screens (min-width: 992px) */
@@ -102,10 +106,14 @@
   // .navigation-button {
   //   font-size: 1.5rem; /* Adjust the font size for larger screens */
   // }
+  .btn {
+    padding: 0; /* Remove padding for iPhones */
+    font-size: 0.8rem;
+  }
 }
 
 /* Adjust styles for mobile phones (max-width: 767px) */
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 896px) {
   .banner {
     min-height: 20rem;
   }
@@ -132,7 +140,8 @@
     padding: 0.1rem 0.1rem;
   }
   .navigation-button i {
-    font-size: 0.6rem; /* You can adjust the size as needed */
+    // font-size: 0.6rem; /* You can adjust the size as needed */
+    display: none;
   }
   /* Adjust width for responsiveness */
   .cta .cta-inner {
@@ -140,6 +149,7 @@
     margin: 0.5rem;
   }
   .btn {
-    font-size: 0.9rem;
+    padding: 0; /* Remove padding for iPhones */
+    font-size: 0.8rem;
   }
 }
