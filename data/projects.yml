@@ -36,7 +36,7 @@
 - name: Movie Watchlist #4
   description: A watch list website where you can make lists and add movies you want to watch.
   image: projects/placeholder.png
-  url: https://watch-list-40nu.onrender.com/lists
+  url: https://watch-list-40nu.onrender.com
   github_url: https://github.com/meifruit/rails-watch-list
   icons:
     - rails-plain
