@@ -2,7 +2,15 @@
   height: auto;
   width: 30vh;
   border-radius: 25px;
-  box-shadow: 8px 5px 11px 0px rgba(24, 25, 26, 0.66);
+  // box-shadow: 8px 5px 11px 0px rgba(24, 25, 26, 0.66);
+  position: relative;
+
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .avatar-large {
   width: 56px;
