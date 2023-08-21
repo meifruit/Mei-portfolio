@@ -152,4 +152,20 @@
     padding: 0; /* Remove padding for iPhones */
     font-size: 0.8rem;
   }
+  .navigation-button {
+    /* ... (other styles) ... */
+
+    /* Reset hover styles for phone size */
+    transition: none;
+    transform: none;
+    box-shadow: none;
+  }
+  /* Reset hover styles for phone size */
+  .navigation-button:hover {
+    color: inherit;
+    background-color: transparent;
+    font-size: none;
+    margin-right: 0;
+    box-shadow: none;
+  }
 }
