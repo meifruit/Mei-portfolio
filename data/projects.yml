@@ -1,5 +1,5 @@
 - name: Wolfminute #1
-  description: Efficiently manage meetings with an AI-powered calendar featuring schedules, video calls, chat, and analytics.
+  description: Efficiently manage meetings with an AI-powered calendar featuring schedules, video calls, chat, and analytics. Login with(User:mei@wolfminute.com, Pass:123456).
   image: projects/wolfminute.png
   url: https://wolfminute.onrender.com/users/sign_in
   github_url: https://github.com/meifruit/WolfMinute-portfolio
@@ -11,7 +11,7 @@
     # - heroku-original
     - github-original
 - name: Hive #2
-  description: Explore profiles, book seamlessly, understand interests through detailed profiles, trust via reviews, find local dates; track and receive date notifications.
+  description: Explore profiles, book seamlessly, understand interests through detailed profiles, trust via reviews, find local dates; track and receive date notifications. Login with(User:john@email.com, Pass:123456).
   image: projects/hive.png
   url: https://hive-pnlg.onrender.com/
   github_url: https://github.com/meifruit/Hive
