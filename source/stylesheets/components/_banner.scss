@@ -34,6 +34,7 @@
   padding: 0.5rem 1.1rem;
   border-radius: 0.5rem;
   transition: all 0.3s;
+  text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 .navigation-button:hover {
   color: #26afeb;
@@ -47,14 +48,16 @@
 }
 .navigation-buttons i {
   padding-right: 0.5rem;
+  color: #c5c2c2;
 }
 .navigation-button-link {
   color: #a5e0f3;
   text-decoration: none;
 }
 .text-body-emphasis {
-  text-shadow: 0 0 7px #8fcdd1, 0 0 10px #8fcdd1, 0 0 42px #8fcdd1,
-    0 0 82px #8fcdd1;
+  // text-shadow: 0 0 7px #8fcdd1, 0 0 10px #8fcdd1, 0 0 42px #8fcdd1,
+  //   0 0 82px #8fcdd1;
+  text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 /* Adjust styles for tablet screens (min-width: 768px) */
 @media (min-width: 768px) {

@@ -42,9 +42,12 @@
   color: #a5e0f3;
 }
 /* Set the width of the portfolio item to 50% for iPad size (768px) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1180px) {
   .col-md-6 {
     max-width: 50%;
+  }
+  .portfolio-item {
+    height: 476px;
   }
 }
 
@@ -60,6 +63,12 @@
   .img-item {
     height: 200px; /* Adjust the height for smaller screens if needed */
   }
+  .portfolio-item {
+    height: 476px;
+  }
+  // .portfolio-item .caption {
+  //   padding-bottom: 0;
+  // }
 
   // .navigation-buttons {
   //   flex-direction: row; /* Stack the navigation buttons vertically */
@@ -85,8 +94,10 @@
 }
 
 .portfolio-item .caption .caption-content {
-  color: #fff;
+  // color: #fff;
+  color: #191c1c;
   margin: auto 2rem 2rem;
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-item .caption .caption-content h2,
