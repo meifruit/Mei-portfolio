@@ -1,5 +1,5 @@
 - name: Wolfminute #1
-  description: Decent description of the appDecent description of the app
+  description: Efficiently manage meetings with an AI-powered calendar featuring schedules, video calls, chat, and analytics.
   image: projects/wolfminute.png
   url: https://wolfminute.onrender.com/users/sign_in
   github_url: https://github.com/meifruit/WolfMinute-portfolio
@@ -11,9 +11,10 @@
     # - heroku-original
     - github-original
 - name: Hive #2
-  description: Decent description of the appDecent description of the app
+  description: Explore profiles, book seamlessly, understand interests through detailed profiles, trust via reviews, find local dates; track and receive date notifications.
   image: projects/hive.png
-  url: https://www.google.com
+  url: https://hive-pnlg.onrender.com/
+  github_url: https://github.com/meifruit/Hive
   icons:
     - rails-plain
     - postgresql-plain-wordmark
@@ -35,7 +36,7 @@
     - github-original
 - name: Movie Watchlist #4
   description: A watch list website where you can make lists and add movies you want to watch.
-  image: projects/placeholder.png
+  image: projects/watchlist.png
   url: https://watch-list-40nu.onrender.com
   github_url: https://github.com/meifruit/rails-watch-list
   icons:
