@@ -27,7 +27,7 @@
   align-items: center;
   font-size: 1rem;
   text-decoration: none;
-  color: #cdcfd1;
+  color: #c5c2c2;
   text-transform: uppercase;
   // font-weight: 400;
   background-color: #06465b;
@@ -58,7 +58,8 @@
 .text-body-emphasis {
   // text-shadow: 0 0 7px #8fcdd1, 0 0 10px #8fcdd1, 0 0 42px #8fcdd1,
   //   0 0 82px #8fcdd1;
-  text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 6px 2px rgba(0, 0, 0, 0.25);
+  color: #c5c2c2;
 }
 /* Adjust styles for tablet screens (min-width: 768px) */
 @media (min-width: 768px) {
