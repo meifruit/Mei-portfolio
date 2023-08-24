@@ -13,10 +13,10 @@
     - postgresql-plain-wordmark
     # - heroku-original
     - github-original
-- name: Hive #2
+- name: HappyEnding #2
   description: Explore profiles, book seamlessly, understand interests through detailed profiles, trust via reviews, find local dates; track and receive date notifications. Login with(User:john@email.com, Pass:123456).
-  image: projects/hive.png
-  url: https://hive-pnlg.onrender.com/
+  image: projects/happy.png
+  url: https://happyending.herokuapp.com/
   github_url: https://github.com/meifruit/Hive
   icons:
     - html5-plain-wordmark
