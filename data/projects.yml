@@ -4,9 +4,12 @@
   url: https://wolfminute.onrender.com/users/sign_in
   github_url: https://github.com/meifruit/WolfMinute-portfolio
   icons:
-    - rails-plain
-    - ruby-plain-wordmark
+    - html5-plain-wordmark
+    - css3-plain-wordmark
+    - bootstrap-plain-wordmark
     - javascript-plain
+    - ruby-plain-wordmark
+    - rails-plain
     - postgresql-plain-wordmark
     # - heroku-original
     - github-original
@@ -16,13 +19,14 @@
   url: https://hive-pnlg.onrender.com/
   github_url: https://github.com/meifruit/Hive
   icons:
+    - html5-plain-wordmark
+    - css3-plain-wordmark
+    - bootstrap-plain-wordmark
+    - javascript-plain
+    - ruby-plain-wordmark
     - rails-plain
     - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
-    - javascript-plain
-    - css3-plain-wordmark
-    - html5-plain-wordmark
+    # - heroku-original
     - github-original
 - name: Capitalista #3
   description: A minimalist bank APP that displays all transactions, allows money transfers, and enables to request a loan. Login with(User:mf, PIN:5555).
@@ -40,28 +44,26 @@
   url: https://watch-list-40nu.onrender.com
   github_url: https://github.com/meifruit/rails-watch-list
   icons:
+    - css3-plain-wordmark
+    - html5-plain-wordmark
+    - bootstrap-plain-wordmark
     - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
     - ruby-plain-wordmark
-    - javascript-plain
+    - postgresql-plain-wordmark
     - github-original
 # - name: TinPanda #5
-#   description: Decent description of the appDecent description of the app
+#   description: Bootstrap challenges for good webdesign
 #   image: projects/tinpanda.png
 #   url: https://meifruit.github.io/portfolio-challenges/TinPanda/index.html
 #   icons:
 #     - html5-plain-wordmark
 #     - bootstrap-plain-wordmark
 #     - github-original
-- name: Longest Word Game
-  description: Decent description of the appDecent description of the appDecent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+- name: Pig game
+  description: A simple dice game where players take turns rolling a dice and try to accumulate points.
+  image: projects/piggame.png
+  url: https://meifruit.github.io/portfolio-challenges/Piggame/index.html
+  github_url: https://github.com/meifruit/portfolio-challenges
   icons:
-    - rails-plain
-    - postgresql-plain-wordmark
-    - heroku-original
-    - ruby-plain-wordmark
     - javascript-plain
     - github-original
