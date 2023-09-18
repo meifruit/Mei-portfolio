@@ -67,3 +67,13 @@
   icons:
     - javascript-plain
     - github-original
+- name: DrawingPallet
+  description: A simple drawing pallet.
+  image: projects/drawing.png
+  url: https://meifruit.github.io/drawing/index.html
+  github_url:
+  icons:
+    - html5-plain-wordmark
+    - css3-plain-wordmark
+    - javascript-plain
+    # - github-original
