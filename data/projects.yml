@@ -68,15 +68,15 @@
     - javascript-plain
     - github-original
 - name: DrawingPallet
-  description: A simple drawing pallet.
+  description: A basic drawing palette challenge using JavaScript.
   image: projects/drawing.png
   url: https://meifruit.github.io/drawing/index.html
-  github_url:
+  github_url: https://github.com/meifruit/drawing
   icons:
     - html5-plain-wordmark
     - css3-plain-wordmark
     - javascript-plain
-    # - github-original
+    - github-original
 - name: HealthyTable
   description: A user-friendly recipe website that enables users to search for recipes, access detailed ingredient lists and instructions, and bookmark their favorite recipes for future reference.
   image: projects/healthytable.png
