@@ -1,7 +1,7 @@
 - name: Wolfminute #1
   description: Efficiently manage meetings with an AI-powered calendar featuring schedules, video calls, chat, and analytics. Login with(User:mei@wolfminute.com, Pass:123456).
   image: projects/wolfminute.png
-  url: https://wolfminute.onrender.com/users/sign_in
+  # url: https://wolfminute.onrender.com/users/sign_in
   github_url: https://github.com/meifruit/WolfMinute-portfolio
   icons:
     - html5-plain-wordmark
@@ -77,3 +77,13 @@
     - css3-plain-wordmark
     - javascript-plain
     # - github-original
+- name: HealthyTable
+  description: A user-friendly recipe website that enables users to search for recipes, access detailed ingredient lists and instructions, and bookmark their favorite recipes for future reference.
+  image: projects/healthytable.png
+  # url: https://meifruit.github.io/drawing/index.html
+  github_url: https://github.com/meifruit/HealthyTabble
+  icons:
+    - html5-plain-wordmark
+    - css3-plain-wordmark
+    - javascript-plain
+    - github-original
